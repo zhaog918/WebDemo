@@ -1,0 +1,12 @@
+web:
+#  image: zhaog/python:v1
+  build: .
+  ports:
+   - 5000
+  command: python app.py
+  volumes:
+   - $PWD/code:/code
+  links:
+   - redis
+redis:
+  image: redis
