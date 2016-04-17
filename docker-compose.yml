@@ -1,6 +1,6 @@
 web:
-#  image: zhaog/python:v1
-  build: .
+  image: zhaog918/web_lb_demo
+#  build: .
   ports:
    - 5000
   command: python app.py
