@@ -1,6 +1,5 @@
 web:
-  image: zhaog918/web_lb_demo
-#  build: .
+  image: zhaog918/webdemo
   ports:
    - 5000
   command: python app.py
