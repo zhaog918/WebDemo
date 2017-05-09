@@ -9,7 +9,7 @@ redis = Redis(host='redis', port=6379)
 @app.route('/')
 def hello():
     redis.incr('hits')
-    showword='Hello Docker ! Hello CMCC JX  ! I have been seen %s times.' % redis.get('hits') + 'From IP:' + socket.gethostbyname(socket.gethostname())
+    showword='Hello Docker ! Hello HNZY  ! I have been seen %s times.' % redis.get('hits') + 'From IP:' + socket.gethostbyname(socket.gethostname())
     return '%s' % showword 
 
 if __name__ == "__main__":
